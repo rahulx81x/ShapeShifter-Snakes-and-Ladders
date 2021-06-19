@@ -31,6 +31,8 @@ while consent == 'y':
                         turn.turn(P[index], throw)
                     except IndexError:
                         print('Choose a dice from the list 1-4 next turn\n')
+                    except ValueError:
+                        print("Enter a valid no.")
                     if P[index].position == 100:
                         winner = 1
                     break
